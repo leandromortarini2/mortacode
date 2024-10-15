@@ -72,3 +72,29 @@
     opacity: 1;
   }
 }
+.menu {
+  position: fixed;
+  bottom: 0; /* Respaldo si no hay soporte para env() */
+  bottom: env(
+    safe-area-inset-bottom,
+    1rem
+  ); /* 1rem de espacio en caso de no soportar env() */
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+}
+.menu {
+  position: fixed;
+  bottom: 0; /* Respaldo si no hay soporte para env() */
+  bottom: env(
+    safe-area-inset-bottom,
+    1rem
+  ); /* 1rem de espacio en caso de no soportar env() */
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+}

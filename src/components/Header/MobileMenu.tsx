@@ -21,7 +21,7 @@ export const MobileMenu = () => {
   return (
     <div className="relative lg:hidden">
       <ContainerMobile open={open} />
-      <div className="w-full   fixed top-[630px]">
+      <div className="w-full  menu">
         <div className="card ">
           {routes.map((route, i) => {
             return (

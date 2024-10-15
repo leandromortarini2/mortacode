@@ -15,7 +15,7 @@ export const ContainerMobile = ({ open }: ContainerMobileProps) => {
     <>
       {open && (
         <div className="w-full h-screen fixed  flex-col justify-end items-end  top-0 left-0 bg-gray-100">
-          <div className="w-full h-1/2 relative top-[40%] flex flex-col justify-center items-center gap-5 bg-gray-100">
+          <div className="w-full h-1/2 relative top-[30%] flex flex-col justify-center items-center gap-5 bg-gray-100">
             <a
               href="https://www.linkedin.com/in/leandro-mortarini/"
               target="_blank"
