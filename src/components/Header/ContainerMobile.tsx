@@ -20,9 +20,9 @@ export const ContainerMobile = ({ open }: ContainerMobileProps) => {
               href="https://www.linkedin.com/in/leandro-mortarini/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-xl   capitalize border-none flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
+              className="   capitalize   text-base font-semibold  flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
             >
-              <FaLinkedinIn className="mr-1 text-primary " />
+              <FaLinkedinIn className="mr-1 text-primary text-lg" />
               <span>Linkedin</span>
             </a>
             <a
@@ -30,27 +30,27 @@ export const ContainerMobile = ({ open }: ContainerMobileProps) => {
 "
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-xl   capitalize border-none flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
+              className="   capitalize   text-base font-semibold  flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
             >
-              <FaWhatsapp className="mr-1  text-primary " />
+              <FaWhatsapp className="mr-1  text-primary text-lg " />
               <span>WhatsApp</span>
             </a>
             <a
               href="https://github.com/leandromortarini2"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-xl   capitalize border-none flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
+              className="   capitalize   text-base font-semibold  flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
             >
-              <FaGithub className="mr-1  text-primary " />
+              <FaGithub className="mr-1  text-primary text-lg" />
               <span>GitHub</span>
             </a>
             <a
               href="https://www.instagram.com/mortacode/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-xl   capitalize border-none flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
+              className="   capitalize   text-base font-semibold  flex hover:bg-gray-300  justify-center items-center h-10 w-3/4 md:w-1/2  bg-gray-200 rounded-lg"
             >
-              <IoLogoInstagram className="mr-1  text-primary " />
+              <IoLogoInstagram className="mr-1  text-primary text-lg" />
               <span>Instagram</span>
             </a>
             <a

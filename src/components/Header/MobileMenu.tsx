@@ -27,6 +27,8 @@ export const MobileMenu = () => {
             return (
               <Link
                 key={i}
+                smooth={true}
+                duration={1000}
                 className="socialContainer containerOne"
                 to={route.url}
               >

@@ -17,7 +17,7 @@ export const MenuBar = () => {
     <div>
       <Menubar>
         <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer text-base text-secondary uppercase hover:text-primary border-none ">
+          <MenubarTrigger className="cursor-pointer capitalize  text-base font-semibold  text-secondary hover:text-primary border-none ">
             Contacto <IoIosArrowDown className="ml-2" />
           </MenubarTrigger>
           <MenubarContent className="hidden lg:flex flex-col">
