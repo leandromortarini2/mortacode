@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 import { Button } from "@/components/ui/button";
 import { Tech } from "@/components/Tech/Tech";
 import { FaWhatsapp } from "react-icons/fa";
-import { HeroMobile } from "./HeroMobile";
+import { HeroMobile } from "./heroMobile";
 
 export const Hero = () => {
   return (
