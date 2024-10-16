@@ -22,7 +22,7 @@ export const MobileMenu = () => {
     <div className="relative md:hidden ">
       <ContainerMobile open={open} />
       <div className="w-full  menu z-50">
-        <div className="card ">
+        <div className="card gap-5">
           {routes.map((route, i) => {
             return (
               <Link
