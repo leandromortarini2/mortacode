@@ -18,9 +18,9 @@ export const MenuBar = () => {
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger className="cursor-pointer capitalize  text-base font-semibold  text-secondary hover:text-primary border-none ">
-            Contacto <IoIosArrowDown className="ml-2" />
+            Contacto <IoIosArrowDown className="ml-2 z-50" />
           </MenubarTrigger>
-          <MenubarContent className="hidden lg:flex flex-col">
+          <MenubarContent className="hidden md:flex flex-col z-50 ">
             <MenubarItem>
               <FaLinkedinIn className="mr-2 h-4 w-4 text-primary" />
               <a

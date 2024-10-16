@@ -5,7 +5,7 @@ import { MenuBar } from "./MenuBar";
 
 export const NavigationMenuDemo = () => {
   return (
-    <div className="hidden w-full lg:flex justify-evenly ">
+    <div className="hidden w-full md:flex justify-evenly ">
       <ButtonNavigate />
       <MenuBar />
     </div>

@@ -8,23 +8,25 @@ import { Link } from "react-scroll";
 import { Button } from "@/components/ui/button";
 import { Tech } from "@/components/Tech/Tech";
 import { FaWhatsapp } from "react-icons/fa";
+import { HeroMobile } from "./heroMobile";
 export const Hero = () => {
   return (
     <>
       <Element name="home">
-        return (
-        <section className="w-full flex flex-col justify-center items-center overflow-hidden ">
+        <section className="hidden w-full lg:flex flex-col justify-center items-center overflow-hidden ">
           <div className="  ">
             <div className=" grid items-center gap-8 lg:grid-cols-2 ">
-              <div className=" flex flex-col items-center justify-center text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left   ">
-                <p className="text-gray-600 text-lg font-semibold">
+              <div className=" flex flex-col items-center justify-center text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left mt-20   ">
+                <p className="text-gray-600 text-base lg:text-lg font-semibold">
                   Bienvenido/a
                 </p>
-                <p className="text-gray-600 text-lg font-semibold">Soy</p>
-                <h1 className="my-6 text-primary text-4xl font-bold lg:text-6xl xl:text-[70px]">
+                <p className="text-gray-600 text-base lg:text-lg font-semibold">
+                  Soy
+                </p>
+                <h1 className=" lg:my-6 text-primary text-xl md:text-3xl font-bold lg:text-5xl xl:text-[70px]">
                   Leandro Mortarini
                 </h1>
-                <h1 className=" text-secondary text-4xl font-bold lg:text-3xl">
+                <h1 className=" text-secondary  font-bold text-lg md:text-xl lg:text-2xl">
                   Desarrollador Front-End
                 </h1>
                 <Tech />
@@ -52,7 +54,7 @@ export const Hero = () => {
                   </a>
                 </div>
               </div>
-              <div className="relative aspect-[3/4]">
+              <div className="relative aspect-[4/4]  lg:aspect-[3/4]">
                 <div className="absolute inset-0 flex items-center justify-center ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,14 +82,14 @@ export const Hero = () => {
                   </svg>
                 </div>
 
-                <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-4 border-[#4a6df76f] ">
+                <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-4 border-[#4a6df76f]  ">
                   <img src="/perfil.png" alt="" className="imgEffectLow " />
                 </div>
               </div>
             </div>
           </div>
         </section>
-        );
+        <HeroMobile />
       </Element>
     </>
   );
