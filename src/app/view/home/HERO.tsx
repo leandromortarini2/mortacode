@@ -18,16 +18,16 @@ export const Hero = () => {
           <div className="  ">
             <div className=" grid items-center gap-8 lg:grid-cols-2 ">
               <div className=" flex flex-col items-center justify-center text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left mt-20   ">
-                <p className="text-gray-600 text-base lg:text-lg font-semibold">
+                <p className="text-text_default text-base lg:text-xl font-semibold">
                   Bienvenido/a
                 </p>
-                <p className="text-gray-600 text-base lg:text-lg font-semibold">
+                <p className="text-text_default text-base lg:text-xl font-semibold">
                   Soy
                 </p>
-                <h1 className=" lg:my-6 text-primary text-xl md:text-3xl font-bold lg:text-5xl xl:text-[70px]">
+                <h1 className="  text-title text-xl md:text-3xl font-bold lg:text-5xl xl:text-[70px] border-b-2  border-secondary">
                   Leandro Mortarini
                 </h1>
-                <h1 className=" text-secondary  font-bold text-lg md:text-xl lg:text-2xl">
+                <h1 className=" text-primary  font-bold text-lg md:text-xl lg:text-2xl">
                   Desarrollador Front-End
                 </h1>
                 <Tech />
@@ -61,7 +61,7 @@ export const Hero = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
                     viewBox="0 0 800 800"
-                    className="size-full text-muted-foreground opacity-20"
+                    className="size-full text-muted-foreground opacity-80"
                   >
                     {Array.from(Array(720).keys()).map((dot, index, array) => {
                       const angle = 0.2 * index;
@@ -76,14 +76,14 @@ export const Hero = () => {
                           cx={400 + x}
                           cy={400 + y}
                           opacity="1"
-                          fill="#4a6cf7"
+                          fill="#2e1065"
                         />
                       );
                     })}
                   </svg>
                 </div>
 
-                <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-4 border-[#4a6df76f]  ">
+                <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl  bg-[#ffffff72] ">
                   <img src="/perfil.png" alt="" className="imgEffectLow " />
                 </div>
               </div>

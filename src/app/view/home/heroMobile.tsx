@@ -20,7 +20,7 @@ export const HeroMobile = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   version="1.1"
                   viewBox="0 0 800 800"
-                  className="size-full text-muted-foreground opacity-30"
+                  className="size-full text-muted-foreground opacity-60"
                 >
                   {Array.from(Array(720).keys()).map((dot, index, array) => {
                     const angle = 0.2 * index;
@@ -35,7 +35,7 @@ export const HeroMobile = () => {
                         cx={400 + x}
                         cy={400 + y}
                         opacity="1"
-                        fill="#4a6cf7"
+                        fill="#2e1065"
                       />
                     );
                   })}
@@ -43,18 +43,18 @@ export const HeroMobile = () => {
               </div>
               <Tech />
 
-              <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-2 border-[#4a6df76f]  ">
+              <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl  ">
                 <img src="/perfil.png" alt="" className="imgEffectLow " />
               </div>
             </div>
             <div className=" grid items-center gap-8 lg:grid-cols-2 ">
               <div className=" flex flex-col items-center justify-center text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left  relative bottom-10 md:bottom-0 ">
-                <p className="text-gray-600 text-base ">Bienvenido/a</p>
-                <p className="text-gray-600 text-base font-semibold">Soy</p>
-                <h1 className=" lg:my-6 text-primary text-2xl font-bold ">
+                <p className="text-text_default text-base ">Bienvenido/a</p>
+                <p className="text-text_defaulttext-base font-semibold">Soy</p>
+                <h1 className=" lg:my-6 text-title text-2xl font-bold ">
                   Leandro Mortarini
                 </h1>
-                <h1 className=" text-secondary  font-bold text-lg ">
+                <h1 className=" text-primary  font-bold text-lg ">
                   Desarrollador Front-End
                 </h1>
 
