@@ -43,7 +43,7 @@ export const HeroMobile = () => {
               </div>
               <Tech />
 
-              <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-4 border-[#4a6df76f]  ">
+              <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl border-2 border-[#4a6df76f]  ">
                 <img src="/perfil.png" alt="" className="imgEffectLow " />
               </div>
             </div>
