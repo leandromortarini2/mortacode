@@ -4,7 +4,7 @@ import { NavigationMenuDemo } from "./NavigationMenuDemo";
 import { Button } from "@/components/ui/button";
 export const NavBar = () => {
   return (
-    <div className="hidden w-full h-20  lg:flex justify-evenly items-center fixed top-0 z-50">
+    <div className="hidden w-full h-20  lg:flex justify-evenly items-center fixed top-0 z-50 bg-white drop-shadow-md">
       <div className="hidden w-1/4 h-20 lg:flex flex-col justify-center pl-10">
         <h2 className="text-xl font-base">DEV</h2>
         <h1 className="text-2xl font-base text-primary">FRONT-END</h1>
