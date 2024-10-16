@@ -31,11 +31,11 @@ export const MobileMenu = () => {
                 to={route.url}
               >
                 {i === 0 ? (
-                  <IoIosHome className="text-3xl text-white " />
+                  <IoIosHome className="text-xl text-white " />
                 ) : i === 1 ? (
-                  <IoPersonSharp className="text-3xl text-white" />
+                  <IoPersonSharp className="text-xl text-white" />
                 ) : (
-                  <HiOutlineRocketLaunch className="text-3xl text-white" />
+                  <HiOutlineRocketLaunch className="text-xl text-white" />
                 )}
               </Link>
             );
@@ -44,7 +44,7 @@ export const MobileMenu = () => {
             onClick={handleClick}
             className="socialContainer containerOne"
           >
-            <CiMenuBurger className="text-3xl text-white" />
+            <CiMenuBurger className="text-xl text-white" />
           </button>
         </div>
       </div>
