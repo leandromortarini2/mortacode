@@ -27,7 +27,7 @@ export const Hero = () => {
                 <h1 className="  text-title text-xl md:text-3xl font-bold lg:text-5xl xl:text-[70px] border-b-2  border-secondary">
                   Leandro Mortarini
                 </h1>
-                <h1 className=" text-primary  font-bold text-lg md:text-xl lg:text-2xl">
+                <h1 className=" text-p  font-bold text-lg md:text-xl lg:text-2xl">
                   Desarrollador Front-End
                 </h1>
                 <Tech />
@@ -61,7 +61,7 @@ export const Hero = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
                     viewBox="0 0 800 800"
-                    className="size-full text-muted-foreground opacity-80"
+                    className="size-full text-muted-foreground opacity-0"
                   >
                     {Array.from(Array(720).keys()).map((dot, index, array) => {
                       const angle = 0.2 * index;
@@ -83,8 +83,8 @@ export const Hero = () => {
                   </svg>
                 </div>
 
-                <div className=" absolute bottom-[30%] right-[24%] w-[50%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl  bg-[#ffffff72] ">
-                  <img src="/perfil.png" alt="" className="imgEffectLow " />
+                <div className=" absolute bottom-[20%] right-[24%] w-[65%] flex aspect-[5/6] overflow-hidden  justify-center rounded-t-3xl rounded-r-3xl  bg-[#ffffff72] ">
+                  <img src="/perfil.png" alt="" className=" " />
                 </div>
               </div>
             </div>
