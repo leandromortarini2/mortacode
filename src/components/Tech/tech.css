@@ -1,0 +1,30 @@
+.slideTrack {
+  display: flex;
+  animation: scroll 50s linear infinite;
+  /* Ajusta el ancho total según el número de imágenes */
+  width: calc(100px * 22); /* Ajusta según el tamaño de tus imágenes */
+}
+
+.slide {
+  width: 50px; /* Ajuste del ancho de cada slide */
+  height: 50px;
+  margin: 10px; /* Eliminación del margen */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100px * 11)
+    ); /* Ajuste del ancho de la animación */
+  }
+}
+
+/* Media Queries aquí si son necesarias */
