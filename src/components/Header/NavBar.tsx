@@ -8,7 +8,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 export const NavBar = () => {
   return (
-    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-white drop-shadow-sm ">
+    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-white  ">
       <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10">
         {/* <h2 className="md:text-base lg:text-xl font-base">DEV</h2>
         <h1 className="md:xl lg:text-2xl font-base text-secondary">
