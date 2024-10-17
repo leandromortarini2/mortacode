@@ -10,15 +10,11 @@ export const NavBar = () => {
   return (
     <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-white  ">
       <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10">
-        {/* <h2 className="md:text-base lg:text-xl font-base">DEV</h2>
-        <h1 className="md:xl lg:text-2xl font-base text-secondary">
-          FRONT-END
-        </h1> */}
-        <h1 className="md:xl lg:text-xl font-semibold text-primary font-roboto flex items-center uppercase ">
-          <MdArrowBackIos />
-          Morta <PiRocketLaunchFill className="text-secondary" />
+        <h1 className="md:xl lg:text-xl font-semibold text-title font-roboto flex items-center uppercase ">
+          <MdArrowBackIos className="text-title" />
+          Morta <PiRocketLaunchFill className="text-title" />
           code
-          <MdArrowForwardIos />
+          <MdArrowForwardIos className="text-title" />
         </h1>
       </div>
       <div className=" hidden w-2/4 h-20 md:flex justify-center items-center">

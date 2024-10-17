@@ -10,8 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         buttonNavigate:
-          "text-title  hover:text-secondary capitalize  text-base font-semibold  ",
-        default: "bg-primary text-white shadow hover:bg-primary/90",
+          "text-primary  hover:text-title capitalize  text-base font-semibold  ",
+        default: "bg-title text-white shadow hover:bg-secondary",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
