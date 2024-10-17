@@ -8,7 +8,7 @@ export const Tech = () => {
   return (
     <div>
       <motion.div
-        className="max-w-[400px] xl:w-[600px] h-20 flex justify-center items-center overflow-hidden  mb-10 md:mb-0  "
+        className="max-w-[400px] xl:w-[600px] h-20 flex justify-center items-center overflow-hidden     "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
