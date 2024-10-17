@@ -8,12 +8,12 @@ export const Tech = () => {
   return (
     <div>
       <motion.div
-        className="max-w-[400px] xl:w-[600px] h-20 flex justify-center items-center overflow-hidden relative  md:bottom-0"
+        className="max-w-[400px] xl:w-[600px] h-20 flex justify-center items-center overflow-hidden  mb-10 md:mb-0  "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <div className="w-full flex items-center overflow-hidden">
+        <div className="w-[80%] md:w-full flex items-center overflow-hidden">
           <div className="slideTrack">
             {/* Duplica el contenido para crear un efecto de bucle infinito */}
             {[...arrayTech, ...arrayTech].map((tec, index) => (
