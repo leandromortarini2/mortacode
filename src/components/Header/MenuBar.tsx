@@ -3,7 +3,6 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarSeparator,
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { FaWhatsapp } from "react-icons/fa";
