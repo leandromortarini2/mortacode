@@ -8,13 +8,13 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 export const NavBar = () => {
   return (
-    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-white  ">
+    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-[#020817]  ">
       <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10">
-        <h1 className="md:xl lg:text-xl font-semibold text-title font-roboto flex items-center uppercase ">
-          <MdArrowBackIos className="text-title" />
-          Morta <PiRocketLaunchFill className="text-title" />
+        <h1 className="md:xl lg:text-xl font-semibold text-white font-roboto flex items-center uppercase ">
+          <MdArrowBackIos className="text-white" />
+          Morta <PiRocketLaunchFill className="text-white" />
           code
-          <MdArrowForwardIos className="text-title" />
+          <MdArrowForwardIos className="text-white" />
         </h1>
       </div>
       <div className=" hidden w-2/4 h-20 md:flex justify-center items-center">
@@ -26,7 +26,14 @@ export const NavBar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="font-semibold ">Hoja de Vida</Button>
+          <div className="container">
+            <button
+              id="btnHero"
+              className="btnHero px-10 max-py-[2px] flex justify-center items-center"
+            >
+              C | V
+            </button>
+          </div>{" "}
         </a>
       </div>
     </div>

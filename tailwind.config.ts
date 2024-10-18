@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#fff",
+        background: "#020617",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -20,12 +20,12 @@ const config: Config = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: "black",
+        primary: "#fff",
         primaryDark: "#fff",
-        title: "#ef4444",
-        hover_primary: "gray",
-        secondary: "#522a2a",
-        text_default: "#1f2937",
+        title: "#991b1b",
+        hover_primary: "#020617",
+        secondary: "#22d3ee",
+        text_default: "#6b7280",
 
         muted: {
           DEFAULT: "hsl(var(--muted))",

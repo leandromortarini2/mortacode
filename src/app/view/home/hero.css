@@ -23,3 +23,30 @@
   background-size: cover; /* Ensures the image covers the element */
   background-position: 50% 30%; /* Centers the image */
 }
+
+/* From Uiverse.io by Spacious74 */
+/* From Uiverse.io by zjssun */
+.btnHero {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btnHero:hover {
+  color: #ffffff;
+  background: #22d3ee;
+  border: 1px solid #22d3ee;
+  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff; */
+  box-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 10px #22d3ee,
+    0 0 100px #22d3ee;
+}

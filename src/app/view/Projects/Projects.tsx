@@ -1,62 +1,38 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import { HeroParallax } from "@/components/prueba/prueba";
+
+import { CarouselOrientation } from "@/components/Carousel/Carousel";
 import React from "react";
 import { Element } from "react-scroll";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { Parallax } from "@/components/Parallax/Parallax";
+import { Modal } from "@/components/Modal/Modal";
 
 export const Projects = () => {
-  const products = [
+  const words = [
     {
-      title: "Product 1",
-      link: "/https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
+      text: "Mis Proyectos",
+      className: "text-2xl md:text-7xl font-bold text-primary dark:text-white",
     },
-    {
-      title: "Product 2",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 3",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 1",
-      link: "/https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 2",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 3",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 1",
-      link: "/https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 2",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    {
-      title: "Product 3",
-      link: "https://ui.aceternity.com/_next/image?url=%2Flogo-dark.png&w=64&q=75",
-      thumbnail: "/bg4.svg",
-    },
-    // Añade hasta 15 productos
   ];
-
   return (
     <>
       <Element name="projects">
-        <HeroParallax products={products} />
+        {/* <div className="max-w-7xl mx-auto py-20 md:py-40 px-4 w-1/2 ">
+            <TypewriterEffectSmooth words={words} delay={1} />
+
+            <p className="max-w-2xl text-base md:text-xl mt-8 text-secondary dark:text-neutral-200">
+              Explora mis proyectos desarrollados como Front-End y Full Stack,
+              tanto individuales como grupales. Haz clic en las imágenes para
+              ver más detalles, acceder a la versión completa o ver un video de
+              demostración.
+            </p>
+          </div>
+          <div className="w-1/2 flex justify-center pb-16   ">
+            <CarouselOrientation />
+          </div> */}
+
+        <Parallax />
       </Element>
     </>
   );

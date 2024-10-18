@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   motion,
   useScroll,
@@ -7,8 +8,7 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+import { Modal } from "../Modal/Modal";
 
 export const HeroParallax = ({
   products,
@@ -54,6 +54,7 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
@@ -67,7 +68,6 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -104,13 +104,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+      <h1 className="text-2xl md:text-7xl font-bold text-white dark:text-white">
+        Mis Proyectos
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl text-base md:text-xl text-secondary mt-8 dark:text-neutral-200">
+        Explora mis proyectos desarrollados como Front-End y Full Stack, tanto
+        individuales como grupales. Haz clic en las imágenes para ver más
+        detalles, acceder a la versión completa o ver un video de demostración.
       </p>
     </div>
   );
@@ -127,6 +127,16 @@ export const ProductCard = ({
   };
   translate: MotionValue<number>;
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar la apertura del modal
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <motion.div
       style={{
@@ -135,25 +145,25 @@ export const ProductCard = ({
       whileHover={{
         y: -20,
       }}
-      key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-72 w-[30rem] relative flex-shrink-0"
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
-        <Image
-          src={product.thumbnail}
-          height="600"
-          width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+      <span onClick={handleOpenModal}>
+        <img
+          src={product.link}
+          className="object-cover object-left-top absolute h-full w-full inset-0 cursor-pointer"
           alt={product.title}
         />
-      </Link>
+      </span>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>
+      {/* Integración del Modal */}
+      <Modal
+        img={product.link}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </motion.div>
   );
 };

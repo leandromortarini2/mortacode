@@ -5,56 +5,15 @@ import { Element } from "react-scroll";
 import "./hero.css";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-scroll";
-import { Button } from "@/components/ui/button";
 import { Tech } from "@/components/Tech/Tech";
+import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-
+import { words, words2, words3 } from "@/lib/textArray";
 export const Hero = () => {
-  const words = [
-    {
-      text: "Bienvenido/a",
-      className: "text-text_default text-2xl dark:text-blue-500",
-    },
-
-    {
-      text: "a mi portafolio",
-      className: "text-text_default text-2xl   dark:text-blue-500",
-    },
-    {
-      text: "soy",
-      className: "text-text_default text-2xl   dark:text-blue-500",
-    },
-  ];
-  const words2 = [
-    {
-      text: "Leandro",
-      className:
-        "text-primary dark:text-blue-500 md:text-5xl lg:text-6xl xl:text-[80px]",
-    },
-    {
-      text: "Mortarini",
-      className:
-        "text-primary dark:text-blue-500 md:text-5xl lg:text-6xl xl:text-[80px]",
-    },
-  ];
-  const words3 = [
-    {
-      text: "Desarrollador",
-      className:
-        "text-title dark:text-blue-500 md:text-2xl lg:text-4xl xl:text-5xl",
-    },
-
-    {
-      text: "Front-End",
-      className:
-        "text-title dark:text-blue-500 md:text-2xl lg:text-4xl xl:text-5xl",
-    },
-  ];
-
   // Función externa que calcula el delay
 
   return (

@@ -35,7 +35,7 @@ const MenubarTrigger = React.forwardRef<
   <MenubarPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex cursor-pointer select-none items-center rounded-sm px-3 py-1 text-sm font-medium outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-primary",
+      "flex cursor-pointer select-none items-center rounded-sm px-3 py-1 text-sm font-medium outline-none focus:bg-hover_primary focus:text-secondarys data-[state=open]:bg-hover_primary data-[state=open]:text-primary",
       className
     )}
     {...props}
@@ -52,7 +52,7 @@ const MenubarSubTrigger = React.forwardRef<
   <MenubarPrimitive.SubTrigger
     ref={ref}
     className={cn(
-      "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
+      "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-[#053b50] focus:text-accent-foreground data-[state=open]:bg-[#053b50] data-[state=open]:text-accent-foreground",
       inset && "pl-8",
       className
     )}
