@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { NavigationMenuDemo } from "./NavigationMenuDemo";
-import { Button } from "@/components/ui/button";
 import { PiRocketLaunchFill } from "react-icons/pi";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
