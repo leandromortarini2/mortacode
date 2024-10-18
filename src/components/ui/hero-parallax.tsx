@@ -9,16 +9,9 @@ import {
   MotionValue,
 } from "framer-motion";
 import { Modal } from "../Modal/Modal";
+import { IProject } from "@/interfaces/IProjects";
 
-export const HeroParallax = ({
-  products,
-}: {
-  products: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  }[];
-}) => {
+export const HeroParallax = ({ products }: { products: IProject[] }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
@@ -120,11 +113,7 @@ export const ProductCard = ({
   product,
   translate,
 }: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  };
+  product: IProject;
   translate: MotionValue<number>;
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar la apertura del modal
