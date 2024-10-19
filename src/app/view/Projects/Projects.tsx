@@ -1,15 +1,19 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// Projects.tsx
 "use client";
 
-import React from "react";
+import { SliderProjects } from "@/components/SliderProjects/SliderProjects";
+import { TitleProjects } from "@/components/TitleProjects/TitleProjects";
 import { Element } from "react-scroll";
-import { Parallax } from "@/components/Parallax/Parallax";
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
   return (
     <>
       <Element name="projects">
-        <Parallax />
+        <div className="w-full min-h-screen flex flex-col justify-center items-center   ">
+          <TitleProjects />
+          <SliderProjects />
+          {/* Asegúrate de pasar los items aquí */}
+        </div>
       </Element>
     </>
   );

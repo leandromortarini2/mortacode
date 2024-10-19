@@ -47,6 +47,6 @@
   background: #22d3ee;
   border: 1px solid #22d3ee;
   /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff; */
-  box-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 10px #22d3ee,
+  box-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 8px #22d3ee,
     0 0 100px #22d3ee;
 }

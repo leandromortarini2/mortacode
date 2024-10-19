@@ -4,14 +4,14 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 import { TextAbout } from "@/components/TextAbout/TextAbout";
 import { TextExperence } from "@/components/TextExperence/TextExperence";
-import { TechAbout } from "@/components/TechAbout/TechAbout";
+// import { TechAbout } from "@/components/TechAbout/TechAbout";
 
 export const About = () => {
   const [view, setView] = useState("about");
-  const [triggerLoading, setTriggerLoading] = useState(false); // Nuevo estado para activar la carga
+  // const [triggerLoading, setTriggerLoading] = useState(false); // Nuevo estado para activar la carga
 
   const handleTechClick = () => {
-    setTriggerLoading(true); // Activa la carga al hacer clic
+    // setTriggerLoading(true); // Activa la carga al hacer clic
     setView("tecnologías"); // Cambia la vista a "tecnologías"
   };
   const loadingStates = [
@@ -115,7 +115,7 @@ export const About = () => {
                     <p className="text-primary text-xl">{state.text}</p>
                   </div>
                 ))}
-                <TechAbout triggerLoading={triggerLoading} />
+                {/* <TechAbout triggerLoading={triggerLoading} /> */}
                 {/* Pasa la prop aquí */}
               </div>
             )}

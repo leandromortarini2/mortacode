@@ -15,7 +15,7 @@ const loadingStates = [
   { text: "Styled Components" },
 ];
 
-export function TechAbout({ triggerLoading }) {
+export function TechAbout(triggerLoading: boolean) {
   // Recibe la prop
   const [loading, setLoading] = useState(triggerLoading);
 
