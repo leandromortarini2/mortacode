@@ -8,7 +8,6 @@ import {
   useSpring,
   MotionValue,
 } from "framer-motion";
-import { Modal } from "../Modal/Modal";
 import { IProject } from "@/interfaces/IProjects";
 
 export const HeroParallax = ({ products }: { products: IProject[] }) => {
