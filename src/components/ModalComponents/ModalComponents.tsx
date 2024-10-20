@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "../ui/button";
 import { proyectos } from "@/lib/projectsArray";
@@ -11,7 +12,7 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
   return (
     <div
       onClick={closeModal}
-      className="w-full h-screen bg-[#0000001b]  fixed top-0 left-0 flex justify-center items-center z-20 "
+      className="w-full h-screen bg-[#0000009c]  fixed top-0 left-0 flex justify-center items-center z-20 "
     >
       <div className="w-3/4 h-[650px] bg-background z-50 mt-10 ">
         <div className="w-full flex justify-end">
