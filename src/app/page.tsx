@@ -21,9 +21,7 @@ export default function Home() {
       </div>
       <NavBar />
       <MobileMenu />
-      {/* <Hero /> */}
       <MainHero />
-      {/* <SuperHero /> */}
       <About />
       <Projects />
     </>
