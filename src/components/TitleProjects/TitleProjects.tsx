@@ -4,11 +4,11 @@ import { SparklesCore } from "../ui/sparkles";
 
 export function TitleProjects() {
   return (
-    <div className="h-[20rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="w-full  md:h-[20rem] md:w-full  flex flex-col items-center justify-center overflow-hidden rounded-md  p-4">
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
         Proyectos
       </h1>
-      <div className="w-[40rem] h-20 relative">
+      <div className="hidden md:block w-full h-10 md:w-[40rem] md:h-20 relative">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />

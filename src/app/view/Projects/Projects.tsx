@@ -11,8 +11,10 @@ export const Projects: React.FC = () => {
       <Element name="projects">
         <div className="w-full min-h-screen flex flex-col justify-center items-center   ">
           <TitleProjects />
+          <p className="text-secondary text-center md:hidden">
+            Desliza de costado para ver más proyectos{" "}
+          </p>
           <SliderProjects />
-          {/* Asegúrate de pasar los items aquí */}
         </div>
       </Element>
     </>
