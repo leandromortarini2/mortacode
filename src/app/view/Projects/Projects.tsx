@@ -9,9 +9,9 @@ export const Projects: React.FC = () => {
   return (
     <>
       <Element name="projects">
-        <div className="w-full min-h-screen flex flex-col justify-center items-center   ">
+        <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-50 dark:bg-background    ">
           <TitleProjects />
-          <p className="text-secondary text-center md:hidden">
+          <p className="text-primary dark:text-secondary text-center md:hidden">
             Desliza de costado para ver más proyectos{" "}
           </p>
           <SliderProjects />

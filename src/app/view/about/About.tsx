@@ -9,11 +9,11 @@ import { loadingStates } from "@/lib/techArray";
 import { HeadreAbout } from "./HeadreAbout";
 import { ImgAbout } from "./ImgAbout";
 import { AboutMobile } from "./AboutMobile";
-
+import { useTheme } from "@/app/Context/Context";
 export const About = () => {
   const [view, setView] = useState("about");
   // const [triggerLoading, setTriggerLoading] = useState(false); // Nuevo estado para activar la carga
-
+  const { theme } = useTheme();
   const handleTechClick = () => {
     // setTriggerLoading(true); // Activa la carga al hacer clic
     setView("tecnologías"); // Cambia la vista a "tecnologías"
@@ -22,7 +22,7 @@ export const About = () => {
   return (
     <>
       <Element name="about">
-        <div className="w-full md:h-screen md:flex flex-col justify-center items-center hidden ">
+        <div className="w-full md:h-screen md:flex flex-col justify-center items-center hidden bg-gray-100 dark:bg-background ">
           <HeadreAbout
             view={view}
             setView={setView}
@@ -42,12 +42,22 @@ export const About = () => {
               <div className="w-1/2 h-[400px] flex flex-col justify-center items-start pl-10">
                 {loadingStates.map((state, index) => (
                   <div key={index} className="mt-5 flex">
-                    <img
-                      src={state.icon}
-                      alt={state.text}
-                      className="w-8 pr-2"
-                    />
-                    <p className="text-primary text-xl">{state.text}</p>
+                    {theme === "light" && state.text === "Shadcn UI" ? (
+                      <img
+                        src="/tecnologias/ui_light.svg"
+                        alt={state.text}
+                        className="w-8 pr-2"
+                      />
+                    ) : (
+                      <img
+                        src={state.icon}
+                        alt={state.text}
+                        className="w-8 pr-2"
+                      />
+                    )}
+                    <p className="text-text_default dark:text-primaryDark text-xl">
+                      {state.text}
+                    </p>
                   </div>
                 ))}
                 {/* <TechAbout triggerLoading={triggerLoading} /> */}

@@ -20,7 +20,7 @@ export const AboutMobile = () => {
   return (
     <>
       <Element name="about">
-        <div className=" w-full md:h-screen flex flex-col justify-center items-center md:hidden ">
+        <div className=" w-full md:h-screen bg-gray-100 dark:bg-background flex flex-col justify-center items-center md:hidden ">
           <ImgAbout />
 
           <HeadreAbout

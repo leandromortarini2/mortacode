@@ -40,7 +40,7 @@ export const loadingStates = [
   },
   {
     text: "Shadcn UI",
-    icon: "/tecnologias/ui_dark.svg",
+    icon: "/tecnologias/ui_light.svg",
   },
   {
     text: "Styled Components",

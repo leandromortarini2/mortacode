@@ -20,7 +20,7 @@ export function MainHero() {
   return (
     <Element name="home">
       <div
-        className="h-[400vh] bg-background w-full dark:border dark:border-white/[0.1] rounded-md relative  overflow-clip"
+        className="h-[400vh] bg-gray-50 dark:bg-background w-full dark:border dark:border-white/[0.1] rounded-md relative  overflow-clip"
         ref={ref}
       >
         <GoogleGeminiEffect

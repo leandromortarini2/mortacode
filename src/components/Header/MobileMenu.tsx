@@ -9,6 +9,7 @@ import { Link } from "react-scroll";
 import { CiMenuBurger } from "react-icons/ci";
 import { ContainerMobile } from "./ContainerMobile";
 
+import { ButtonThemeMobile } from "./buttonThemeMobile";
 // Definimos la interfaz para las props
 
 export const MobileMenu = () => {
@@ -42,6 +43,8 @@ export const MobileMenu = () => {
               </Link>
             );
           })}
+
+          <ButtonThemeMobile />
           <button
             onClick={handleClick}
             className="socialContainer containerOne"

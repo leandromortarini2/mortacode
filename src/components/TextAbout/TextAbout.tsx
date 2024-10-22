@@ -9,18 +9,22 @@ export function TextAbout() {
         fill="white"
       />
       <div className="pt-2 md:p-4 max-w-7xl  mx-auto relative z-10  w-full ">
-        <h1 className="hidden md:block md:text-3xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h2 className="hidden md:block md:text-3xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-primary   dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">
           Sobre Mi
-        </h1>
-        <p className="md:mt-4 text-sm lg:text-base xl:text-lg text-neutral-300 max-w-lg text-start mx-auto">
-          <span className="text-secondary">Desarrollador Frontend</span>{" "}
+        </h2>
+        <p className="md:mt-4 text-sm lg:text-base xl:text-lg dark:text-primaryDark text-text_default max-w-lg text-start mx-auto font-normal">
+          <span className="text-title font-semibold">
+            Desarrollador Frontend
+          </span>{" "}
           enfocado en la construcción de aplicaciones web dinámicas y
           visualmente atractivas. Me especializo en el uso de tecnologías clave
           como{" "}
-          <span className="text-secondary">JavaScript, TypeScript y React</span>
+          <span className="text-title font-semibold">
+            JavaScript, TypeScript y React
+          </span>
           , con experiencia en la implementación de{" "}
-          <span className="text-secondary"> Redux-Toolkit</span> para una
-          gestión de estado eficiente y escalable. Actualmente, estoy
+          <span className="text-title font-semibold">Redux-Toolkit</span> para
+          una gestión de estado eficiente y escalable. Actualmente, estoy
           colaborando con la empresa Inflatrack en el desarrollo de un software
           de gestión de comercio Además, realizó desarrollos de aplicaciones web
           de manera freelance para clientes reales.

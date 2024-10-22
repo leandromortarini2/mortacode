@@ -53,11 +53,11 @@ export const SliderProjects = () => {
                   >
                     <PinContainer title="Más información">
                       <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-                        <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                        <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-primary dark:text-slate-100">
                           {item.title}
                         </h3>
                         <div className="text-base !m-0 !p-0 font-normal">
-                          <span className="text-secondary font-normal text-sm ">
+                          <span className="text-title dark:text-secondary font-normal text-sm ">
                             {item.tec}
                           </span>
                         </div>
@@ -70,8 +70,14 @@ export const SliderProjects = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex text-secondary bg-transparent hover:bg-secondary hover:text-primary border-2 border-secondary justify-center items-center" />
-        <CarouselNext className="hidden md:flex text-secondary bg-transparent hover:bg-secondary hover:text-primary border-2 border-secondary  justify-center items-center" />
+        <CarouselPrevious
+          className="hidden md:flex text-text_default  bg-transparent  hover:text-title hover:border-title dark:hover:bg-transparent
+          border-2 border-text_default dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
+        />
+        <CarouselNext
+          className="hidden md:flex text-text_default  bg-transparent  hover:text-title hover:border-title dark:hover:bg-transparent
+          border-2 border-text_default dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
+        />
       </Carousel>
       {isOpen && <ModalComponents closeModal={handleModal} title={title} />}
     </div>

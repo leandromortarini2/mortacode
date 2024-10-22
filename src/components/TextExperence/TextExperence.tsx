@@ -9,30 +9,36 @@ export function TextExperence() {
         fill="white"
       />
       <div className="p-4 pt-0 max-w-7xl  mx-auto relative z-10  w-full ">
-        <h1 className="hidden md:block text-xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h2 className="hidden md:block md:text-3xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-primary   dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">
           Experiencia
-        </h1>
-        <p className="mt-2 font-normal text-sm lg:text-base text-neutral-300 max-w-lg text-start mx-auto">
-          <span className="text-secondary">
+        </h2>
+        <p className="mt-2 font-normal text-sm lg:text-base text-text_default dark:text-primaryDark max-w-lg text-start mx-auto">
+          <span className="text-title font-semibold">
             Desarrollador Frontend - Inflatrack
           </span>{" "}
           <br />
-          <span className="text-secondary">Julio 2024 - Actualidad</span> <br />
+          <span className="text-title font-semibold">
+            Julio 2024 - Actualidad
+          </span>{" "}
+          <br />
           Mi rol principal es como Frontend Developer, donde he desarrollado
           componentes reutilizables, optimizaciones y desarrollo nuevas
           funcionalidades. <br />
           <hr className="p-1  border-secondary" />
-          <span className="text-secondary ">
+          <span className="text-title font-semibold">
             Desarrollador Frontend - Freelance
           </span>
           <br />
-          <span className="text-secondary">Junio 2024 - Actualidad</span> <br />
+          <span className="text-title font-semibold">
+            Junio 2024 - Actualidad
+          </span>{" "}
+          <br />
           Desarrollo de Landing Page para empresas como SteticGlam y plataforma
           de pedidos por whatsapp para IceCream. <br />
           <hr className="p-1  border-secondary" />
-          <span className="text-secondary ">Oficial de Policia</span>
+          <span className="text-title font-semibold">Oficial de Policia</span>
           <br />
-          <span className="text-secondary">
+          <span className="text-title font-semibold">
             Diciembre 2016 - Diciembre 2023
           </span>
           <br />
