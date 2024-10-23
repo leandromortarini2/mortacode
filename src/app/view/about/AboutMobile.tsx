@@ -46,7 +46,7 @@ export const AboutMobile = () => {
                       alt={state.text}
                       className="w-8 pr-2"
                     />
-                    <p className="text-primary text-sm md:text-lg ">
+                    <p className="text-primary dark:text-primaryDark text-sm md:text-lg ">
                       {state.text}
                     </p>
                   </div>

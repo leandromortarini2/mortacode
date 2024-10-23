@@ -31,4 +31,12 @@ export const socialArray = [
       "text-primaryDark capitalize text-base font-semibold hover:bg-secondary h-10 w-3/4 md:w-1/2 bg-[#053b50] rounded-lg flex justify-center items-center",
     label: "Instagram",
   },
+  {
+    href: "https://docs.google.com/document/d/e/2PACX-1vSaMUsNK5DUQArFCfDuOtO-Ys_wuCUZafXnD-Q6goJMAI2jzVeCBXrek6MVa4Z2mL-3OSb5CgYE3UjI/pub",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className:
+      "text-primaryDark capitalize text-base font-semibold hover:bg-secondary h-10 w-3/4 md:w-1/2 bg-[#053b50] rounded-lg flex justify-center items-center",
+    label: "Curriculum",
+  },
 ];

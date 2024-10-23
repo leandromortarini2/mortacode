@@ -1,27 +1,20 @@
-.imgEffectLow {
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 75%,
-    /* Tres cuartos de la imagen son completamente visibles */ rgba(0, 0, 0, 0)
-      100% /* El degradado comienza a desaparecer suavemente */
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 1) 85%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-}
-
 .bghero {
   background: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
     ),
-    url("/bg5.png");
-  background-size: cover; /* Ensures the image covers the element */
-  background-position: 50% 30%; /* Centers the image */
+    url("/fondo1.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+/* Estilo para el modo oscuro */
+.dark .bghero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/fondo1.jpg"); /* Cambia a un fondo distinto si es necesario */
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 /* From Uiverse.io by Spacious74 */

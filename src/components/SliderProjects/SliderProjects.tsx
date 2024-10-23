@@ -49,7 +49,7 @@ export const SliderProjects = () => {
                       setTitle(item.title);
                       handleOpenModal();
                     }}
-                    className="h-72 w-full flex items-center justify-center "
+                    className="h-72 w-full flex items-center justify-center   rounded-md cursor-pointer"
                   >
                     <PinContainer title="Más información">
                       <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
@@ -57,11 +57,11 @@ export const SliderProjects = () => {
                           {item.title}
                         </h3>
                         <div className="text-base !m-0 !p-0 font-normal">
-                          <span className="text-title dark:text-secondary font-normal text-sm ">
+                          <span className="text-title dark:text-primaryDark font-normal text-sm ">
                             {item.tec}
                           </span>
                         </div>
-                        <img src={item.link} alt="" />
+                        <img src={item.link} alt="" className="w-[300px]" />
                       </div>
                     </PinContainer>
                   </div>
@@ -71,12 +71,12 @@ export const SliderProjects = () => {
           ))}
         </CarouselContent>
         <CarouselPrevious
-          className="hidden md:flex text-text_default  bg-transparent  hover:text-title hover:border-title dark:hover:bg-transparent
-          border-2 border-text_default dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
+          className="hidden md:flex text-white  bg-primary hover:bg-primary/90  hover:text-white dark:hover:bg-transparent
+          border-2 border-primary dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
         />
         <CarouselNext
-          className="hidden md:flex text-text_default  bg-transparent  hover:text-title hover:border-title dark:hover:bg-transparent
-          border-2 border-text_default dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
+          className="hidden md:flex text-white  bg-primary hover:bg-primary/90  hover:text-white dark:hover:bg-transparent
+          border-2 border-primary dark:text-primaryDark dark:border-primaryDark justify-center items-center dark:hover:border-secondary dark:hover:text-secondary"
         />
       </Carousel>
       {isOpen && <ModalComponents closeModal={handleModal} title={title} />}

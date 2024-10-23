@@ -20,22 +20,22 @@
 }
 /* instagram*/
 .containerOne:hover {
-  background-color: #22d3ee;
+  background-color: #4a6cf7;
   transition-duration: 0.3s;
 }
 /* twitter*/
 .containerTwo:hover {
-  background-color: #053b50;
+  background-color: #4a6cf7;
   transition-duration: 0.3s;
 }
 /* linkdin*/
 .containerThree:hover {
-  background-color: #0072b1;
+  background-color: #4a6cf7;
   transition-duration: 0.3s;
 }
 /* Whatsapp*/
 .containerFour:hover {
-  background-color: green;
+  background-color: #4a6cf7;
   transition-duration: 0.3s;
 }
 

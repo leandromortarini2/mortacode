@@ -2,7 +2,7 @@
   display: flex;
   animation: scroll 50s linear infinite;
   /* Ajusta el ancho total según el número de imágenes */
-  width: calc(100px * 22); /* Ajusta según el tamaño de tus imágenes */
+  width: calc(50px * 30 * 2); /* Ajusta según el tamaño de tus imágenes */
 }
 
 .slide img {
@@ -16,7 +16,7 @@
   }
   100% {
     transform: translateX(
-      calc(-100px * 11)
+      calc(-100px * 9)
     ); /* Ajuste del ancho de la animación */
   }
 }

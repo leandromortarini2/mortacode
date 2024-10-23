@@ -7,7 +7,8 @@ import { MobileMenu } from "@/components/Header/MobileMenu";
 import { PiRocketLaunchFill } from "react-icons/pi";
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import { MainHero } from "./view/home/MainHero";
+import { Hero } from "./view/home/Hero";
+// import { MainHero } from "./view/home/MainHero";
 export default function Home() {
   return (
     <>
@@ -21,7 +22,8 @@ export default function Home() {
       </div>
       <NavBar />
       <MobileMenu />
-      <MainHero />
+      <Hero />
+      {/* <MainHero /> */}
       <About />
       <Projects />
     </>

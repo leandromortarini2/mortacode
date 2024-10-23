@@ -8,7 +8,7 @@ import { ButtonTheme } from "../ButtonTheme/ButtonTheme";
 
 export const NavBar = () => {
   return (
-    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-primaryDark dark:bg-background  ">
+    <div className="hidden w-full h-16  md:flex justify-evenly items-center fixed top-0 z-50 bg-primaryDark dark:bg-background/50  ">
       <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10">
         <h1 className="md:text-lg font-semibold text-title dark:text-primaryDark font-roboto flex items-center uppercase ">
           <MdArrowBackIos className="text-title dark:text-primaryDark" />

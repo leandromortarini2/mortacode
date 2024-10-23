@@ -55,7 +55,7 @@ export const About = () => {
                         className="w-8 pr-2"
                       />
                     )}
-                    <p className="text-text_default dark:text-primaryDark text-xl">
+                    <p className="text-primary dark:text-primaryDark text-xl">
                       {state.text}
                     </p>
                   </div>

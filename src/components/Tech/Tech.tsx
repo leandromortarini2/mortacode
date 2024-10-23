@@ -1,28 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { motion } from "framer-motion";
-import { arrayTech } from "@/lib/techArray";
+import { loadingStates } from "@/lib/techArray";
 import "./tech.css";
 
 export const Tech = () => {
   return (
     <div>
       <motion.div
-        className="max-w-[1200px] xl:w-[800px] h-20 flex justify-center items-center overflow-hidden relative top-40 lg:top-52    "
+        className="hidden md:max-w-[500px] lg:max-w-[1200px] h-20 md:flex justify-center items-center overflow-hidden     "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
       >
-        <div className="w-1/4 lg:w-1/2 xl:w-full flex items-center overflow-hidden ">
+        <div className="w-full lg:w-1/2 flex items-center overflow-hidden ">
           <div className="slideTrack">
             {/* Duplica el contenido para crear un efecto de bucle infinito */}
-            {[...arrayTech, ...arrayTech].map((tec, index) => (
-              <div key={index} className="w-14 h-14 m-3">
-                <img
-                  src={tec.url}
-                  alt={tec.name}
-                  className=" w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10"
-                />
+            {[...loadingStates, ...loadingStates].map((tec, index) => (
+              <div
+                key={index}
+                className=" h-9 w-40 md:w-52 flex justify-center items-center m-2  "
+              >
+                <img src={tec.icon} alt="" className="w-6 md:w-8 pr-2" />
+                {tec.text === "Redux Toolkit - RTK Query" ? (
+                  <p className="text-sm md:font-semibold">Redux Toolkit</p>
+                ) : (
+                  <p className="text-sm md:font-semibold md:text-base ">
+                    {tec.text}
+                  </p>
+                )}
               </div>
             ))}
           </div>
