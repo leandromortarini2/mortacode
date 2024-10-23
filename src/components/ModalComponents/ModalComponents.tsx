@@ -21,7 +21,7 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
           if (item.title === title) {
             return (
               <div
-                className="w-full  text-primary flex flex-col justify-start items-center pt-24 pb-10 "
+                className="w-full  text-primary flex flex-col justify-start items-center md:pt-24 pb-10 "
                 key={index}
               >
                 <div className="w-full md:w-3/4 relative  bottom-5 text-center">

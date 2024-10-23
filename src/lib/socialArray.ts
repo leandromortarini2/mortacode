@@ -32,7 +32,8 @@ export const socialArray = [
     label: "Instagram",
   },
   {
-    href: "https://docs.google.com/document/d/e/2PACX-1vSaMUsNK5DUQArFCfDuOtO-Ys_wuCUZafXnD-Q6goJMAI2jzVeCBXrek6MVa4Z2mL-3OSb5CgYE3UjI/pub",
+    href: "/cv.pdf",
+    download: "LeandroMortariniCV.pdf",
     target: "_blank",
     rel: "noopener noreferrer",
     className:

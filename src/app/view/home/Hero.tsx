@@ -22,10 +22,10 @@ export const Hero = () => {
               Soy
             </p>
 
-            <h2 className=" capitalize text-3xl relative z-20 md:text-4xl lg:text-8xl font-semibold  text-background dark:text-white font-sans tracking-tight">
+            <h2 className=" capitalize text-3xl relative z-20 md:text-4xl lg:text-8xl font-semibold  text-background dark:text-white font-sans tracking-tight mt-5">
               leandro mortarini
             </h2>
-            <h2 className=" capitalize text-xl relative z-20 md:text-4xl lg:text-5xl font-bold  text-title  font-sans tracking-tight">
+            <h2 className=" capitalize text-xl relative z-20 md:text-4xl lg:text-5xl font-bold  text-title  font-sans tracking-tight mb-5">
               desarrollador front-end
             </h2>
             <Tech />
@@ -38,7 +38,7 @@ export const Hero = () => {
                 );
               })}
             </div>
-            <div className="flex gap-5 ">
+            <div className="flex gap-5 mt-5 ">
               <Link
                 to="projects"
                 smooth={true}
