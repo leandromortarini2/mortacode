@@ -34,7 +34,7 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
                   <ReactPlayer
                     width={"100%"}
                     height={"100%"}
-                    url="https://www.youtube.com/watch?v=y9LlnLTH87U"
+                    url={item.youtube}
                   />
                 </div>{" "}
                 <p className="text-primary dark:text-text_default text-sm md:text-base text-center">

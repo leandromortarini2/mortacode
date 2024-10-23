@@ -18,7 +18,7 @@ export function TextAbout() {
           </span>{" "}
           enfocado en la construcción de aplicaciones web dinámicas y
           visualmente atractivas. Me especializo en el uso de tecnologías clave
-          como{" "}
+          como
           <span className="text-title font-semibold">
             JavaScript, TypeScript y React
           </span>

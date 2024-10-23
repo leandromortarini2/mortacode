@@ -36,7 +36,7 @@ export function TextExperence() {
           Desarrollo de Landing Page para empresas como SteticGlam y plataforma
           de pedidos por whatsapp para IceCream. <br />
           <hr className="p-1  border-secondary" />
-          <span className="text-title font-semibold">Oficial de Policia</span>
+          <span className="text-title font-semibold">Oficial de Policía</span>
           <br />
           <span className="text-title font-semibold">
             Diciembre 2016 - Diciembre 2023
