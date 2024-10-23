@@ -14,7 +14,7 @@ export const Hero = () => {
     <>
       <Element name="home">
         <BackgroundBeamsWithCollision>
-          <div className="w-full min-h-screen bghero dark:bg-black bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center  ">
+          <div className="w-full min-h-screen  bghero dark:bg-black bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center  ">
             <p className="text-text_default dark:text-text_defaultDark text-2xl">
               Bienvenido/a
             </p>
@@ -29,7 +29,7 @@ export const Hero = () => {
               desarrollador front-end
             </h2>
             <Tech />
-            <div className="w-[90%] h-20 flex justify-center items-center gap-5 md:hidden">
+            <div className="w-[90] h-10 flex justify-center items-center gap-3 md:hidden p-2 rounded-sm m-2">
               {loadingStates.map((tec, i) => {
                 return (
                   <div key={i}>

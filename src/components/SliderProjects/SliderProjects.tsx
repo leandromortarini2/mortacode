@@ -49,10 +49,10 @@ export const SliderProjects = () => {
                       setTitle(item.title);
                       handleOpenModal();
                     }}
-                    className="h-72 w-full flex items-center justify-center   rounded-md cursor-pointer"
+                    className="min-h-72 w-full flex items-center justify-center   rounded-md cursor-pointer"
                   >
                     <PinContainer title="Más información">
-                      <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+                      <div className="flex basis-full flex-col p-4   tracking-tight rounded-sm text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                         <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-primary dark:text-slate-100">
                           {item.title}
                         </h3>

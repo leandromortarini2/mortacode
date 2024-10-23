@@ -28,9 +28,7 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
                   <h2 className="text-sm md:text-xl xl:text-3xl text-primary dark:text-primaryDark">
                     {item.title}
                   </h2>
-                  <p className="text-secondary dark:text-text_default text-sm md:text-base">
-                    {item.description}
-                  </p>
+                  <h3 className="text-secondary">{item.perfil}</h3>
                 </div>
                 <div className=" md:w-3/4 h-[190px] md:h-[250px] lg:h-[300px] xl:h-[400px] flex justify-center items-center">
                   <ReactPlayer
@@ -38,7 +36,10 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
                     height={"100%"}
                     url="https://www.youtube.com/watch?v=y9LlnLTH87U"
                   />
-                </div>
+                </div>{" "}
+                <p className="text-primary dark:text-text_default text-sm md:text-base text-center">
+                  {item.description}
+                </p>
                 <div className="w-full  flex justify-center items-center mt-3">
                   {item.vercel && (
                     <a

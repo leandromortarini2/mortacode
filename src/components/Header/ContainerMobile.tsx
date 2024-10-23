@@ -24,7 +24,7 @@ export const ContainerMobile = ({ open }: ContainerMobileProps) => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-title  capitalize  text-base  font-normal  hover:bg-secondary   h-8 w-3/6 md:w-1/2   rounded-lg flex justify-center items-center"
+                className=" text-title  capitalize  text-base  font-normal  hover:text-primary dark:hover:text-primaryDark   h-8 w-3/6 md:w-1/2   rounded-lg flex justify-center items-center"
               >
                 {/* <FaLinkedinIn className="mr-1 text-primary " /> */}
                 {item.label === "Linkedin" && (
