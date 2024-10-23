@@ -16,12 +16,12 @@ export const ModalComponents = ({ closeModal, title }: ModalProps) => {
       onClick={closeModal}
       className="w-full h-screen bg-black/90  fixed top-0 left-0 flex justify-center items-center z-20  "
     >
-      <div className="w-full md:w-3/4  h-[85%] bg-gray-100 dark:bg-gray-950 z-50 mt-10 md:mt-20 p-5 flex flex-col justify-center items-center mb-10 md:mb-0 overflow-x-scroll ">
+      <div className="w-full   h-screen bg-gray-100 dark:bg-gray-950 z-50 mt-10 md:mt-20 p-5 flex flex-col justify-center items-center mb-10 md:mb-0 overflow-x-scroll ">
         {proyectos.map((item, index) => {
           if (item.title === title) {
             return (
               <div
-                className="w-full  text-primary flex flex-col justify-start items-center pt-10 pb-10 "
+                className="w-full  text-primary flex flex-col justify-start items-center pt-24 pb-10 "
                 key={index}
               >
                 <div className="w-full md:w-3/4 relative  bottom-5 text-center">
