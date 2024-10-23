@@ -10,18 +10,13 @@ export const Footer = () => {
     <footer className="bg-primary pb-20  md:pb-0">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            <h1 className="md:xl lg:text-xl font-semibold text-primaryDark dark:text-text_default font-roboto flex items-center uppercase ">
-              <MdArrowBackIos className="text-primaryDark dark:text-text_default" />
-              Morta{" "}
-              <PiRocketLaunchFill className="text-primaryDark dark:text-text_default" />
-              code
-              <MdArrowForwardIos className="text-primaryDark  dark:text-text_default" />
-            </h1>
-          </a>
+          <h1 className="md:xl lg:text-xl font-semibold text-primaryDark dark:text-text_default font-roboto flex items-center uppercase ">
+            <MdArrowBackIos className="text-primaryDark dark:text-text_default" />
+            Morta{" "}
+            <PiRocketLaunchFill className="text-primaryDark dark:text-text_default" />
+            code
+            <MdArrowForwardIos className="text-primaryDark  dark:text-text_default" />
+          </h1>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
               <Link
@@ -54,7 +49,12 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/5401126034427" className="hover:underline">
+              <a
+                href="https://wa.me/5401126034427"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 WhatsApp
               </a>
             </li>
