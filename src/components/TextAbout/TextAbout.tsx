@@ -20,14 +20,15 @@ export function TextAbout() {
           visualmente atractivas. Me especializo en el uso de tecnologías clave
           como
           <span className="text-title font-semibold">
+            {" "}
             JavaScript, TypeScript y React
           </span>
           , con experiencia en la implementación de{" "}
           <span className="text-title font-semibold">Redux-Toolkit</span> para
           una gestión de estado eficiente y escalable. Actualmente, estoy
           colaborando con la empresa Inflatrack en el desarrollo de un software
-          de gestión de comercio Además, realizó desarrollos de aplicaciones web
-          de manera freelance para clientes reales.
+          de gestión de comercio. Además, realizó desarrollos de aplicaciones
+          web de manera freelance para clientes reales.
         </p>
       </div>
     </div>
