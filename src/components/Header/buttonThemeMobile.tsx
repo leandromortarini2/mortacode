@@ -11,12 +11,12 @@ export const ButtonThemeMobile = () => {
   return (
     <button
       onClick={toggleTheme} // Cambia el tema al hacer clic
-      className="socialContainer containerOne"
+      className="socialContainer containerOne "
     >
       {theme === "light" ? (
-        <ImSun className="text-xl text-white" /> // Muestra el icono del sol si el tema es claro
+        <ImSun className="text-xl text-title dark:text-white hover:text-primaryDark " /> // Muestra el icono del sol si el tema es claro
       ) : (
-        <MdDarkMode className="text-xl text-white" /> // Muestra el icono de la luna si el tema es oscuro
+        <MdDarkMode className="text-xl text-title dark:text-white " /> // Muestra el icono de la luna si el tema es oscuro
       )}
     </button>
   );

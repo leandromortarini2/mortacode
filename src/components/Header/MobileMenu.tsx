@@ -20,10 +20,10 @@ export const MobileMenu = () => {
   }
 
   return (
-    <div className="relative md:hidden bg-background  ">
+    <div className="relative md:hidden bg-primaryDark dark:bg-background  ">
       <ContainerMobile open={open} />
-      <div className="w-full  menu z-50  bg-background ">
-        <div className="card gap-5 bg-background">
+      <div className="w-full  menu z-50 bg-primaryDark dark:bg-background ">
+        <div className="card gap-5 bg-primaryDark dark:bg-background">
           {routes.map((route, i) => {
             return (
               <Link
@@ -34,11 +34,11 @@ export const MobileMenu = () => {
                 to={route.url}
               >
                 {i === 0 ? (
-                  <IoIosHome className="text-xl text-white " />
+                  <IoIosHome className="text-xl text-title dark:text-white hover:text-primaryDark" />
                 ) : i === 1 ? (
-                  <IoPersonSharp className="text-xl text-white" />
+                  <IoPersonSharp className="text-xl text-title dark:text-white hover:text-primaryDark" />
                 ) : (
-                  <HiOutlineRocketLaunch className="text-xl text-white" />
+                  <HiOutlineRocketLaunch className="text-xl text-title dark:text-white hover:text-primaryDark" />
                 )}
               </Link>
             );
@@ -49,7 +49,7 @@ export const MobileMenu = () => {
             onClick={handleClick}
             className="socialContainer containerOne"
           >
-            <CiMenuBurger className="text-xl text-white" />
+            <CiMenuBurger className="text-xl text-title dark:text-white hover:text-primaryDark" />
           </button>
         </div>
       </div>
