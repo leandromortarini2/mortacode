@@ -61,7 +61,11 @@ export const SliderProjects = () => {
                             {item.tec}
                           </span>
                         </div>
-                        <img src={item.link} alt="" className="w-[300px]" />
+                        <img
+                          src={item.link}
+                          alt=""
+                          className="w-[300px] h-[140px]"
+                        />
                       </div>
                     </PinContainer>
                   </div>

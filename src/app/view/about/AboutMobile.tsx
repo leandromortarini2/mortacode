@@ -10,11 +10,9 @@ import { Element } from "react-scroll";
 
 export const AboutMobile = () => {
   const [view, setView] = useState("about");
-  // const [triggerLoading, setTriggerLoading] = useState(false); // Nuevo estado para activar la carga
 
   const handleTechClick = () => {
-    // setTriggerLoading(true); // Activa la carga al hacer clic
-    setView("tecnologías"); // Cambia la vista a "tecnologías"
+    setView("tecnologías");
   };
 
   return (
@@ -28,7 +26,7 @@ export const AboutMobile = () => {
             setView={setView}
             handleTechClick={handleTechClick}
           />
-          <div className="w-full md:h-[600px] flex justify-center items-center ">
+          <div className="w-full md:h-[600px] flex justify-center items-center pb-5">
             {view === "about" ? (
               <div className="w-[90%] md:w-1/2 md:h-[500px]">
                 <TextAbout />
@@ -38,9 +36,9 @@ export const AboutMobile = () => {
                 <TextExperence />
               </div>
             ) : (
-              <div className=" md:w-1/2 md:h-[400px] flex flex-col justify-center items-start md:pl-10">
+              <div className=" md:w-1/2 md:h-[410px] flex flex-col justify-center items-start md:pl-10  ">
                 {loadingStates.map((state, index) => (
-                  <div key={index} className="mt-2 md:mt-5 flex">
+                  <div key={index} className="mt-2 md:mt-5 flex  ">
                     <img
                       src={state.icon}
                       alt={state.text}

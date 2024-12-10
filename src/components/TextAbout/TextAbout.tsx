@@ -12,7 +12,7 @@ export function TextAbout() {
         <h2 className="hidden md:block md:text-3xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-primary   dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">
           Sobre Mi
         </h2>
-        <p className="md:mt-4 text-sm lg:text-base xl:text-lg dark:text-primaryDark text-text_default max-w-lg text-start mx-auto font-normal">
+        <p className="md:mt-4 text-sm lg:text-base xl:text-lg dark:text-primaryDark text-primary max-w-lg text-start mx-auto font-normal">
           <span className="text-title font-semibold">
             Desarrollador Frontend
           </span>{" "}

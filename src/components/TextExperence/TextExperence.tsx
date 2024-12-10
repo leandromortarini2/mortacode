@@ -12,7 +12,7 @@ export function TextExperence() {
         <h2 className="hidden md:block md:text-3xl lg:text-4xl xl:text-5xl font-bold text-start bg-clip-text text-transparent bg-primary   dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 dark:bg-opacity-50">
           Experiencia
         </h2>
-        <p className="mt-2 font-normal text-sm lg:text-base text-text_default dark:text-primaryDark max-w-lg text-start mx-auto">
+        <p className="mt-2 font-normal text-sm lg:text-base text-primary dark:text-primaryDark max-w-lg text-start mx-auto">
           <span className="text-title font-semibold">
             Desarrollador Frontend - Inflatrack
           </span>{" "}
