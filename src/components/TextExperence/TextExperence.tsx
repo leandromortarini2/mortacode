@@ -26,15 +26,16 @@ export function TextExperence() {
           funcionalidades. <br />
           <hr className="p-1  border-secondary" />
           <span className="text-title font-semibold">
-            Desarrollador Frontend - Freelance
+            Desarrollador Frontend - INNEVO
           </span>
           <br />
           <span className="text-title font-semibold">
             Junio 2024 - Actualidad
           </span>{" "}
           <br />
-          Desarrollo de Landing Page para empresas como SteticGlam y plataforma
-          de pedidos por whatsapp para IceCream. <br />
+          Formó parte del equipo donde desarrollamos una plataforma para la
+          empresa Servismart. El stack tecnológico que utilizamos es Angular,
+          Angular Material y SCSS. <br />
           <hr className="p-1  border-secondary" />
           <span className="text-title font-semibold">Oficial de Policía</span>
           <br />

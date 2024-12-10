@@ -24,6 +24,10 @@ export const loadingStates = [
     icon: "/tecnologias/react.svg",
   },
   {
+    text: "Angular",
+    icon: "/tecnologias/angular.svg",
+  },
+  {
     text: "Redux Toolkit - RTK Query",
     icon: "/tecnologias/redux.svg",
   },

@@ -21,14 +21,15 @@ export function TextAbout() {
           como
           <span className="text-title font-semibold">
             {" "}
-            JavaScript, TypeScript y React
+            JavaScript, TypeScript, React y Angular
           </span>
           , con experiencia en la implementación de{" "}
           <span className="text-title font-semibold">Redux-Toolkit</span> para
           una gestión de estado eficiente y escalable. Actualmente, estoy
           colaborando con la empresa Inflatrack en el desarrollo de un software
-          de gestión de comercio. Además, realizó desarrollos de aplicaciones
-          web de manera freelance para clientes reales.
+          de gestión de comercio. Además, estoy realizando prácticas en la
+          empresa INNEVO, donde trabajo con tecnologías como Angular, Angular
+          Material y SCSS.
         </p>
       </div>
     </div>
