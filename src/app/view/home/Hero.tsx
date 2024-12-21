@@ -50,7 +50,7 @@ export const Hero = () => {
                 </button>
               </Link>
               <a
-                href="/cv.pdf"
+                href="/LeandroMortariniCV.pdf"
                 className="flex "
                 download="LeandroMortariniCV.pdf"
               >
