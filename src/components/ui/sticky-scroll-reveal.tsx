@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ModalComponents } from "../ModalComponents/ModalComponents";
+import Image from "next/image";
 
 export const StickyScroll = ({
   content,
@@ -16,7 +16,7 @@ export const StickyScroll = ({
     description: string;
     button_text: string;
     url: string;
-    content?: React.ReactNode | any;
+    content?: React.ReactNode;
   }[];
   contentClassName?: string;
 }) => {
@@ -24,7 +24,8 @@ export const StickyScroll = ({
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
 
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
+
   const { scrollYProgress } = useScroll({
     container: ref,
     offset: ["start start", "end start"],
@@ -93,10 +94,12 @@ export const StickyScroll = ({
               <div key={item.title + index} className="my-10 md:my-20">
                 {/* Imagen que solo aparece en mobile */}
                 <div className="w-full flex justify-center pb-10 md:hidden">
-                  <img
+                  <Image
                     src={item.url}
                     alt={item.title}
-                    className="block md:hidden w-1/2 h-auto object-cover rounded-lg imgCarousel"
+                    width={300} // Ajusta según el tamaño deseado
+                    height={200} // Ajusta según el tamaño deseado
+                    className="block md:hidden w-1/2 h-auto rounded-lg"
                   />
                 </div>
                 <motion.h2
