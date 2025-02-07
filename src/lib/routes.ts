@@ -12,4 +12,8 @@ export const routes = [
     name: "proyectos",
     url: "projects",
   },
+  {
+    name: "diseños",
+    url: "design",
+  },
 ];

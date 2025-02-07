@@ -15,7 +15,6 @@ export const Tech = () => {
       >
         <div className="w-full lg:w-1/2 flex items-center overflow-hidden ">
           <div className="slideTrack">
-            {/* Duplica el contenido para crear un efecto de bucle infinito */}
             {[...loadingStates, ...loadingStates].map((tec, index) => (
               <div
                 key={index}
@@ -23,9 +22,11 @@ export const Tech = () => {
               >
                 <img src={tec.icon} alt="" className="w-6 md:w-8 pr-2" />
                 {tec.text === "Redux Toolkit - RTK Query" ? (
-                  <p className="text-sm md:font-semibold">Redux Toolkit</p>
+                  <p className="text-sm md:font-semibold dark:text-white text-background">
+                    Redux Toolkit
+                  </p>
                 ) : (
-                  <p className="text-sm md:font-semibold md:text-base ">
+                  <p className="text-sm md:font-semibold md:text-base dark:text-white text-background">
                     {tec.text}
                   </p>
                 )}

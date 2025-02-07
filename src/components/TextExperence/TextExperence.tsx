@@ -30,7 +30,7 @@ export function TextExperence() {
           </span>
           <br />
           <span className="text-title font-semibold">
-            Junio 2024 - Actualidad
+            Octubre 2024 - Febrero 2025
           </span>{" "}
           <br />
           Formó parte del equipo donde desarrollamos una plataforma para la

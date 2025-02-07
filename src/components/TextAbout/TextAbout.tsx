@@ -27,9 +27,7 @@ export function TextAbout() {
           <span className="text-title font-semibold">Redux-Toolkit</span> para
           una gestión de estado eficiente y escalable. Actualmente, estoy
           colaborando con la empresa Inflatrack en el desarrollo de un software
-          de gestión de comercio. Además, estoy realizando prácticas en la
-          empresa INNEVO, donde trabajo con tecnologías como Angular, Angular
-          Material y SCSS.
+          de gestión de comercio.
         </p>
       </div>
     </div>

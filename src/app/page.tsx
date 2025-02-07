@@ -9,6 +9,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { Hero } from "./view/home/Hero";
 import { Footer } from "@/components/Footer/Footer";
 import { useEffect, useState } from "react";
+import { Design } from "./view/design/Design";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,6 +54,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Design />
       <Footer />
     </>
   );

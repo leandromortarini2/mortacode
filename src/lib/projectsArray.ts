@@ -44,7 +44,6 @@ export const proyectos = [
     vercel: "https://marvel-world-jet.vercel.app/",
     youtube: "https://youtu.be/8B--hke-cpI",
   },
-
   {
     title: "Memoria Futbolera",
     tec: "React | Tailwind | Javascript",
