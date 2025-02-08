@@ -8,23 +8,6 @@ import { Element } from "react-scroll";
 
 const content = [
   {
-    title: "Plataforma de pedidos por WathsApp",
-    tech: "React | Typescript | Tailwind | Material UI",
-    description:
-      "Proyecto 'grupal' para empresa IceCream, es un sistema de pedidos por WhatsApp. Desarrolle el Hero, sección de 'helados', contacto y autenticación con Clerk",
-    button_text: "Ver detalles",
-    url: "https://i.ibb.co/7TyGn71/ice.png",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <img
-          src="https://i.ibb.co/7TyGn71/ice.png"
-          alt=""
-          className="w-[13rem] shadow"
-        />
-      </div>
-    ),
-  },
-  {
     title: "Sistema de Gestión para Negocio",
     tech: "React | JavaScript | Styled Components | Material UI ",
     description:
@@ -41,6 +24,24 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "Plataforma de pedidos por WathsApp",
+    tech: "React | Typescript | Tailwind | Material UI",
+    description:
+      "Proyecto 'grupal' para empresa IceCream, es un sistema de pedidos por WhatsApp. Desarrolle el Hero, sección de 'helados', contacto y autenticación con Clerk",
+    button_text: "Ver detalles",
+    url: "https://i.ibb.co/7TyGn71/ice.png",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <img
+          src="https://i.ibb.co/7TyGn71/ice.png"
+          alt=""
+          className="w-[13rem] shadow"
+        />
+      </div>
+    ),
+  },
+
   {
     title: "Rin|Door",
     tech: "Next Js | Javascript | Tailwind  | OAuth 2.0",

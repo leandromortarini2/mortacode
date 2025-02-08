@@ -23,15 +23,15 @@ export const proyectos = [
   },
 
   {
-    title: "Landing Page",
-    tec: "React | Javascript | Tailwind | i18n ",
+    title: "Sistema de Gestión para Negocio",
+    tec: "React | JavaScript | Styled Components | Material UI",
     perfil: "Frontend ",
     description:
-      "Proyecto realizado en ' binomio ', una landing page dinámica que permite a los usuarios elegir entre un tema claro y oscuro. Además, cuenta con una opción de traducción. Implemente la librería i18n y el diseño en figma",
+      "Inflatrack es un sistema de gestión diseñado para optimizar negocios urbanos. Ofrece herramientas avanzadas para el control de stock, gestión de ventas, generación de estadísticas y control de precios.",
     link: "https://i.ibb.co/Lz11qwJ/landing.jpg",
     github: "",
-    vercel: "https://flamesweb.vercel.app/",
-    youtube: "https://youtu.be/evxDWvy7eXw",
+    vercel: "https://inflatrack.com.ar/",
+    youtube: "https://youtu.be/1cP4YFZnCbE",
   },
   {
     title: "MarvelWorld",
