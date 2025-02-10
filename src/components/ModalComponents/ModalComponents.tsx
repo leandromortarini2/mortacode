@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { proyectos } from "@/lib/projectsArray";
 import ReactPlayer from "react-player";
 
@@ -11,6 +11,14 @@ interface ModalProps {
 }
 
 export const ModalComponents = ({ closeModal, title }: ModalProps) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
     <div
       onClick={closeModal}

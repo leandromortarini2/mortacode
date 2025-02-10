@@ -9,13 +9,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { designData, designDataModal } from "@/lib/designData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Element } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 
 export const Design: React.FC = () => {
   const [modal, setModal] = useState(false);
   const [item, setItem] = useState("");
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
   const handleModal = (item: string) => {
     setItem(item);
