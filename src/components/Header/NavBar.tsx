@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { NavigationMenuDemo } from "./NavigationMenuDemo";
-import { PiRocketLaunchFill } from "react-icons/pi";
-import { MdArrowBackIos } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
 import { ButtonTheme } from "../ButtonTheme/ButtonTheme";
-
+import Image from "next/image";
+import { useTheme } from "@/app/Context/Context";
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,14 +33,24 @@ export const NavBar = () => {
           : "bg-primaryDark/10 dark:bg-background/0"
       }`}
     >
-      <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10">
-        <h1 className="md:text-base lg:text-lg font-semibold text-title dark:text-primaryDark font-roboto flex items-center uppercase ">
-          <MdArrowBackIos className="text-title dark:text-primaryDark" />
-          Morta{" "}
-          <PiRocketLaunchFill className="text-title dark:text-primaryDark" />
-          code
-          <MdArrowForwardIos className="text-title dark:text-primaryDark" />
-        </h1>
+      <div className="hidden w-1/4 h-20 md:flex flex-col justify-center pl-5 lg:pl-10 ">
+        {theme === "light" ? (
+          <Image
+            src="/MortacodeLight.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-40 bg-white p-2 rounded-full dark:bg-gray-800 border-2 "
+          />
+        ) : (
+          <Image
+            src="/MortacodeDark.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-40 bg-white p-2 rounded-full dark:bg-gray-800 border-2 border-gray-600 "
+          />
+        )}
       </div>
       <div className=" hidden w-2/4 h-20 md:flex justify-center items-center">
         <NavigationMenuDemo />

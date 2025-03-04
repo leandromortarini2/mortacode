@@ -10,9 +10,12 @@ import { Hero } from "./view/home/Hero";
 import { Footer } from "@/components/Footer/Footer";
 import { useEffect, useState } from "react";
 import { Design } from "./view/design/Design";
+import Image from "next/image";
+import { useTheme } from "./Context/Context";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme } = useTheme();
 
   // Cambiar la clase del navbar según el desplazamiento de la página
   useEffect(() => {
@@ -41,13 +44,23 @@ export default function Home() {
             : "bg-primaryDark/10 dark:bg-background/0" // Fondo con transparencia
         }`}
       >
-        <h1 className="md:xl lg:text-xl font-semibold text-title dark:text-primaryDark font-roboto flex items-center uppercase ">
-          <MdArrowBackIos className="text-title dark:text-primaryDark" />
-          Morta{" "}
-          <PiRocketLaunchFill className="text-title dark:text-primaryDark" />
-          code
-          <MdArrowForwardIos className="text-title  dark:text-primaryDark" />
-        </h1>
+        {theme === "light" ? (
+          <Image
+            src="/MortacodeLight.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-40 bg-white p-2 rounded-full dark:bg-gray-800 border-2 "
+          />
+        ) : (
+          <Image
+            src="/MortacodeDark.png"
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-40 bg-white p-2 rounded-full dark:bg-gray-800 border-2 border-gray-600 "
+          />
+        )}
       </div>
       <NavBar />
       <MobileMenu />
