@@ -3,9 +3,7 @@ import { NavBar } from "@/components/Header/NavBar";
 import { About } from "./view/about/About";
 import { Projects } from "./view/Projects/Projects";
 import { MobileMenu } from "@/components/Header/MobileMenu";
-import { PiRocketLaunchFill } from "react-icons/pi";
-import { MdArrowBackIos } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
+
 import { Hero } from "./view/home/Hero";
 import { Footer } from "@/components/Footer/Footer";
 import { useEffect, useState } from "react";
