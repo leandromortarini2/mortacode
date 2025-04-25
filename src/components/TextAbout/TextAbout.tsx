@@ -21,7 +21,7 @@ export function TextAbout() {
           como
           <span className="text-title font-semibold">
             {" "}
-            JavaScript, TypeScript, React y Angular
+            JavaScript, TypeScript y React
           </span>
           , con experiencia en la implementación de{" "}
           <span className="text-title font-semibold">Redux-Toolkit</span> para

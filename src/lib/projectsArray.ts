@@ -1,5 +1,16 @@
 export const proyectos = [
   {
+    title: "Ecommerce Juandomingrow",
+    tec: "Next | Typescript | Tailwind | Shadcn UI ",
+    perfil: "Frontend",
+    description:
+      "e-commerce dinámico que optimiza la experiencia de compra en tiempo real. Verificar promociones activas basadas en tipo de producto, cantidad y otras condiciones. Notificaciones automáticas por email tanto para el cliente como para el vendedor",
+    link: "https://i.ibb.co/TBs9FqTv/mobie-juandomingrow.png",
+    github: "",
+    vercel: "https://www.juandomingrow.com.ar/",
+    youtube: "https://youtu.be/kSwAxLFOJXs",
+  },
+  {
     title: "Plataforma de pedidos por WathsApp",
     tec: "React | Typescript | Tailwind | Material UI",
     perfil: "Frontend",

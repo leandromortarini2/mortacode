@@ -8,6 +8,23 @@ import { Element } from "react-scroll";
 
 const content = [
   {
+    title: "Ecommerce Juandomingrow",
+    tech: "Next | Typescript | Tailwind | Shadcn UI ",
+    description:
+      "e-commerce dinámico que optimiza la experiencia de compra en tiempo real. Verificar promociones activas basadas en tipo de producto, cantidad y otras condiciones. Notificaciones automáticas por email tanto para el cliente como para el vendedor",
+    button_text: "Ver detalles",
+    url: "https://i.ibb.co/TBs9FqTv/mobie-juandomingrow.png",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <img
+          src="https://i.ibb.co/TBs9FqTv/mobie-juandomingrow.png"
+          alt=""
+          className="w-[11rem] shadow"
+        />
+      </div>
+    ),
+  },
+  {
     title: "Sistema de Gestión para Negocio",
     tech: "React | JavaScript | Styled Components | Material UI ",
     description:
