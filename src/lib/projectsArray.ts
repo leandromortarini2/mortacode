@@ -1,6 +1,6 @@
 export const proyectos = [
   {
-    title: "Ecommerce Juandomingrow",
+    title: "E-commerce Juandomingrow",
     tec: "Next | Typescript | Tailwind | Shadcn UI ",
     perfil: "Frontend",
     description:
@@ -21,6 +21,18 @@ export const proyectos = [
     vercel: "https://ice-cream-seven.vercel.app/",
     youtube: "https://www.youtube.com/watch?v=okOHv5hHqXQ",
   },
+  {
+    title: "¿Quién es ese Pokémon?",
+    tec: "Vue 3 | Typescript | Tailwind",
+    perfil: "Frontend",
+    description:
+      "Se trata de un juego web inspirado en uno de los clásicos de adivinar personajes de la saga de Pokémon. Contador de partidas ganadas y perdidas.Tiene animación de confeti si acertás, música y es totalmente responsive",
+    link: "https://i.ibb.co/J9sqv9b/pokemon.png",
+    github: "",
+    vercel: "https://pokemon-game-nu.vercel.app/",
+    youtube: "https://www.youtube.com/watch?v=EzW_3GSAP44",
+  },
+
   {
     title: "Rin|Door",
     tec: "Next Js | Javascript | Tailwind  | OAuth 2.0",

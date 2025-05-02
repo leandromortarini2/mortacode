@@ -8,7 +8,7 @@ import { Element } from "react-scroll";
 
 const content = [
   {
-    title: "Ecommerce Juandomingrow",
+    title: "E-commerce Juandomingrow",
     tech: "Next | Typescript | Tailwind | Shadcn UI ",
     description:
       "e-commerce dinámico que optimiza la experiencia de compra en tiempo real. Verificar promociones activas basadas en tipo de producto, cantidad y otras condiciones. Notificaciones automáticas por email tanto para el cliente como para el vendedor",
@@ -30,7 +30,7 @@ const content = [
     description:
       "Inflatrack es un sistema de gestión diseñado para optimizar negocios urbanos. Ofrece herramientas avanzadas para el control de stock, gestión de ventas, generación de estadísticas y control de precios.",
     button_text: "Ver detalles",
-    url: "https://i.ibb.co/RGTwZY7w/infla.png",
+    url: "",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <img
@@ -41,6 +41,24 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "¿Quién es ese Pokémon?",
+    tech: "Vue 3 | Typescript | Tailwind ",
+    description:
+      "Se trata de un juego web inspirado en uno de los clásicos de adivinar personajes de la saga de Pokémon. Contador de partidas ganadas y perdidas.Tiene animación de confeti si acertás, música y es totalmente responsive",
+    button_text: "Ver detalles",
+    url: "https://i.ibb.co/J9sqv9b/pokemon.png",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <img
+          src="https://i.ibb.co/J9sqv9b/pokemon.png"
+          alt=""
+          className="w-[11rem] shadow"
+        />
+      </div>
+    ),
+  },
+
   {
     title: "Plataforma de pedidos por WathsApp",
     tech: "React | Typescript | Tailwind | Material UI",
