@@ -1,6 +1,6 @@
 export const socialArray = [
   {
-    href: "https://www.linkedin.com/in/leandro-mortarini/",
+    href: "https://www.linkedin.com/in/leandro-mortarini2/",
     target: "_blank",
     rel: "noopener noreferrer",
     className:

@@ -32,7 +32,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/leandro-mortarini/"
+                  href="https://www.linkedin.com/in/leandro-mortarini2/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline me-4 md:me-6"

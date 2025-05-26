@@ -23,7 +23,7 @@ export const MenuBar = () => {
             <MenubarItem className=" ">
               <FaLinkedinIn className="mr-2 h-4 w-4 text-secondary" />
               <a
-                href="https://www.linkedin.com/in/leandro-mortarini/"
+                href="https://www.linkedin.com/in/leandro-mortarini2/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
